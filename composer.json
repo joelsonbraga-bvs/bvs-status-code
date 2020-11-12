@@ -1,0 +1,13 @@
+{
+    "name": "joelsonbraga-bvs/bvs-status-code",
+    "description": "BVS Status Code",
+    "type": "no",
+    "license": "no",
+    "authors": [
+        {
+            "name": "Joelson Braga",
+            "email": "joelson.braga@boavistascpc.com.br"
+        }
+    ],
+    "require": {}
+}
