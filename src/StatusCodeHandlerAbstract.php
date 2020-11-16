@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 
 namespace StatusCode;
 
@@ -34,7 +34,7 @@ abstract class StatusCodeHandlerAbstract implements StatusCodeHandlerInterface
             return $this->handle($statusCode, $message);
         }
 
-        return $this->next->handleIt($statusCode);
+        return $this->next->handleIt($statusCode, $message);
     }
 
     /**

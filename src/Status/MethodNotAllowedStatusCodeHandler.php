@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 
 namespace StatusCode\Status;
 
@@ -41,3 +41,4 @@ class MethodNotAllowedStatusCodeHandler extends StatusCodeHandlerAbstract
         return $statusCode === 405;
     }
 }
+

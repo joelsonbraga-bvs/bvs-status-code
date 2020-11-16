@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 
 namespace StatusCode;
 
@@ -109,9 +109,9 @@ class StatusCodeMessage
     }
 
     /**
-     * @param string $message
+     * @param string|null $message
      */
-    public function setMessage(string $message): void
+    public function setMessage(?string $message = null): void
     {
         $this->message = $message;
     }
@@ -131,6 +131,4 @@ class StatusCodeMessage
     {
         $this->http_status_code = $http_status_code;
     }
-
-
 }

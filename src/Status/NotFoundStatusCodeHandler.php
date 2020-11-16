@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 
 namespace StatusCode\Status;
 
@@ -26,7 +26,7 @@ class NotFoundStatusCodeHandler extends StatusCodeHandlerAbstract
         $response->setStatus(false);
         $response->setDataStatus(false);
         $response->setCode(4004);
-        $response->setMessage('Not Found');
+        $response->setMessage($message??'Not Found');
         $response->setHttpStatusCode($statusCode);
 
         return $response;
@@ -41,3 +41,4 @@ class NotFoundStatusCodeHandler extends StatusCodeHandlerAbstract
         return $statusCode === 404;
     }
 }
+
